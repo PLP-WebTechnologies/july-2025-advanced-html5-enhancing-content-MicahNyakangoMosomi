@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An advanced HTML5 page with lists, tables, media, and a complete form." />
+  <title>Advanced HTML5 Assignment</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Advanced Elements Showcase</h1>
+    <p>Lists, tables, media, and forms using semantic HTML and built-in validation.</p>
+  </header>
+
+  <main>
+
+    <!-- Section: Lists -->
+    <section>
+      <h2>Languages I'm Learning</h2>
+
+      <article>
+        <h3>Programming Languages (Ordered List)</h3>
+        <ol>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>TypeScript</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>AI and Web Concepts (Unordered List)</h3>
+        <ul>
+          <li>Machine Learning</li>
+          <li>Semantic HTML</li>
+          <li>Responsive Design</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>Learning Schedule</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>JavaScript & Forms</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Database Design</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>AI & Logic</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Learning Resources</h2>
+
+      <article>
+        <h3>Course Preview</h3>
+        <video controls width="320">
+          <source src="https://www.youtube.com/watch?v=916GWv2Qs08&pp=ygULaHRtbCBjb3Vyc2U%3D" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </article>
+
+      <article>
+        <h3>Visual Diagram</h3>
+        <img src="https://www.google.com/imgres?q=diagram%20of%20an%20html%20page%20structure&imgurl=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F323869270%2Ffigure%2Ffig3%2FAS%3A606182121164801%401521536488788%2FStructure-of-an-HTML5-Web-Page.png&imgrefurl=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FStructure-of-an-HTML5-Web-Page_fig3_323869270&docid=yDrjA4skHOy98M&tbnid=-6xtgUpJF3_KGM&vet=12ahUKEwjXpY2nh-KOAxWj_rsIHVbIL28QM3oECDAQAA..i&w=850&h=657&hcb=2&ved=2ahUKEwjXpY2nh-KOAxWj_rsIHVbIL28QM3oECDAQAA" alt="Diagram of an HTML5 page structure" width="300" />
+      </article>
+    </section>
+
+    <!-- Section: HTML5 Form -->
+    <section>
+      <h2>Course Registration Form</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" />
+
+          <br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" />
+
+          <br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Course Details</legend>
+
+          <label for="track">Choose Track:</label>
+          <select id="track" name="track" required>
+            <option value="">--Select--</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="ai">AI & ML</option>
+          </select>
+
+          <br /><br />
+
+          <label for="experience">Experience (0–10):</label>
+          <input type="number" id="experience" name="experience" min="0" max="10" required />
+
+          <br /><br />
+
+          <label for="github">GitHub Profile:</label>
+          <input type="url" id="github" name="github" placeholder="https://github.com/MicahNyakangoMosomi" pattern="https://.*" />
+
+          <br /><br />
+
+          <label>
+            <input type="checkbox" name="agree" required />
+            I agree to the terms and conditions.
+          </label>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Account Setup</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4" maxlength="12" />
+
+          <br /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" />
+
+          <br /><br />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+        </fieldset>
+
+        <br />
+
+        <input type="submit" value="Register" />
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Micah Mosomi. HTML5 Advanced Assignment.</p>
+  </footer>
+
+</body>
+</html>
